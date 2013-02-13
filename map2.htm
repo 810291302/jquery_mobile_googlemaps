@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="jquery.mobile-1.2.0.min.css" />
+	<script src="jquery-1.8.3.min.js"></script>
+	<script src="jquery.mobile-1.2.0.min.js"></script>
+
+</head> 
+<body> 
+	
+<div data-role="page" id="map2" class="map_page">
+
+	<div data-role="header">
+		<a href="index.html" data-rel="back">Back</a>
+		<h1>Map</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" class="map_content">	
+
+		<div class="map_canvas"></div>
+
+		<label for="from_loc">From:</label>
+		<input type="text" name="from_loc" id="from_loc" data-mini="true" />
+		<label for="to_loc">To:</label>
+		<input type="text" name="to_loc" id="to_loc" data-mini="true" value="Austin, TX"/>
+		<button id="btn">Get Directions</button>
+
+		<div id="directionsPanel"></div>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>
